@@ -1,0 +1,313 @@
+.container{
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a{  
+    color: #AEB0BA;
+    text-decoration: none;
+}
+.box + .box{
+    border-top: 1px solid #707070;
+}
+
+.header{
+    background-color: #2A2B31;
+    .container{
+        justify-content: center;
+        height: 100px;
+        
+    }
+    /*ヘッダーロゴ*/
+    &_logo{
+        
+        width: 80px;
+        height: 20px;
+        color: white;
+        padding-top: 25px;
+        margin: 0 auto;
+    }
+    /*ヘッダーナビ*/
+    &_nav{
+        display: block;
+        width: 50%;
+        margin:0 auto;
+        &_list{
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+            list-style: none;
+            li{
+                text-align: center;
+                width: 20%;
+                color: #AEB0BA;
+            }
+
+        }
+        
+    }
+}
+/*メイン*/
+.main{
+    /*大きい画像*/
+    &_top{
+        img{
+            height: auto;
+            width: 100%;
+        }
+    }
+    /*人気アイテム*/
+    &_popular{
+        height: 525px;
+        color: #707070;
+        text-align: center;
+
+        &_head{
+            padding-top: 104px;
+            padding-bottom: 51px;
+            h2{
+                margin: 0;
+                font-size: 38px;
+            }
+            
+        }
+        &_body{
+            max-width: 1218px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            margin: 0 auto;
+            text-align: center;
+            justify-content: space-between;
+            &_item{
+                color: #707070;
+                img{
+                    max-width: 170px;
+                    height: auto;
+                }
+                &_name-en{
+                    font-size: 20px;
+                }
+                &_name-ja{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    /*紹介*/
+    &_intro{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3,1fr);
+        width: 50%;
+        margin: 64px auto;
+
+        &_item{
+            width: 100%;
+            img{
+                width: 100%;
+                height: auto;
+                background-color: grey;
+            }
+        }
+    }
+
+    .btn{
+        display: block;
+        margin: auto;
+        background-color: #FFFFFF;
+        border: solid 1px #707070;
+        border-radius: 30px 30px 30px 30px;
+        width: 80%;
+        height: 60px;
+        color: #707070;
+        font-size: 24px;
+        text-align: center;
+        grid-row: 3;
+        grid-column: 2;
+        
+    }
+    /*つながる*/
+    &_connect{
+        width: 50%;
+        height: 400px;
+        margin: 0 auto;
+        h3{
+            font-size: 38px;
+            text-align: center;
+            color: #6E6E6E;
+        }
+        &_frame{
+            display: grid;
+            grid-template-columns: 255px 255px 255px;
+            grid-template-rows: 130px;
+            justify-content: center;
+            gap: 40px;
+            &_item{
+                text-align: center;
+                /*アイコンの代わり画像入れたら消す*/
+                img{
+                    width: 30px;
+                    height: 30px;
+                    background-color: grey;
+                }
+                &_icon{
+                    display: grid;
+                    grid-template-columns: 32px 32px 32px;
+                    grid-template-rows: 36px;
+                    justify-content: center;
+                    gap: 25px;
+                    color: #707070;
+                    
+                }
+                &_title{
+                    font-size: 18px;
+                    color: #6E6E6E;
+                }
+                &_sentence{
+                    font-size: 12px;
+                    color: #AEB0BA;
+                }
+            }
+            /*登録するボタン*/
+            &_register{
+                display: block;
+                background-color: #FFFFFF;
+                border: solid 1px #707070;
+                border-radius: 30px 30px 30px 30px;
+                width: 141px;
+                height: 33px;
+                color: #707070;
+                font-size: 14px;
+                margin:0 auto;
+                grid-row: 2;
+                grid-column: 1;
+            }
+            /*詳しくボタン*/
+            &_detail{
+                display: block;
+                background-color: #FFFFFF;
+                border: solid 1px #707070;
+                border-radius: 30px 30px 30px 30px;
+                width: 141px;
+                height: 33px;
+                color: #707070;
+                font-size: 14px;
+                grid-row: 2;
+                grid-column: 2;
+                margin: 0 auto;
+            }
+            
+        }
+    }
+    /*重要なお知らせ*/
+    &_announce{
+        height: 216px;
+        background-color: #FF5E5E;
+        &_cp{
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+            text-align: left;
+            
+            p{
+                font-size: 18px;
+                color: #FFFFFF;
+                margin-top: 0;
+                padding-top: 42px;
+            }
+            ul{
+                font-size: 16px;
+                color: #FFFFFF;
+            }
+        }
+    }
+    /*メニュ準備*/
+    
+    /*menu-----------------------------------*/
+    &_menu{
+        height: 530px;
+        background-color: #6E6E6E;
+        
+        &_head{
+            display: flex;
+            max-width: 972px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 63px 0;
+            height: 402px;
+            &_object{
+                width: 240px;
+                flex: 1;
+                .title{
+                    font-size: 16px;
+                    display: block;
+                }
+                .item{
+                    display: flex;
+                    text-align: center;
+                    height: 32px;
+                    margin: 24px 5px;
+                    &_img{
+                        width: 32px;
+                        height: 32px;
+                        background-color: rgb(135, 115, 207);
+                    }
+                    &_sentence{
+                        &_en{
+                            font-size: 16px;
+                            margin: 0.5px;
+                        }
+                        &_ja{
+                            font-size: 12px;
+                            margin: 0.5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+/*黒いところ*/
+.announce{
+    background-color: #2A2B31;
+    h3{
+        font-size: 27px;
+        color: #FFFFFF;
+        margin: 0;
+    }
+    h4{
+        font-size: 14px;
+        color: #AEB0BA;
+        margin: 0;
+    }
+    li{
+        font-size: 12px;
+        color: #AEB0BA;
+    }
+    &_top{
+        display: flex;
+        
+        &_News{
+            width: 322px;
+            height: 347px;
+        }
+        &_4box{
+            width: 322px;
+            height: 170px;
+        }
+        }
+    }
+}
+
+    /*緑のところ*/
+.foot{
+    background-color: #00C1BA;
+    display: flex;
+    justify-content: center;
+    p{
+
+    }
+}
